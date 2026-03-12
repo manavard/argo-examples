@@ -1,9 +1,8 @@
 resources:
   - ../../base
-  - deployment.yaml
 
 patches:
-  - deployment.yaml
+  - path: deployment.yaml
 
 configMapGenerator:
   - name: mykustom-map

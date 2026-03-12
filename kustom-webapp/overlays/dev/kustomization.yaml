@@ -1,10 +1,11 @@
-bases:
-- ../../base
+resources:
+  - ../../base
+  - deployment.yaml
 
 patches:
- - deployment.yaml
+  - deployment.yaml
 
 configMapGenerator:
-- name: mykustom-map
-  files: 
-    - config.properties
+  - name: mykustom-map
+    files: 
+      - config.properties
